@@ -3,7 +3,9 @@ sicks300
 
 This is a fork of [Sicks300](https://github.com/bohlender/sicks300)
 
-ROS package for reading continuous data output of the SICK S300 Professional laser scanner via _TCP_. Note that it supports both the old (v.1.02) and the new (v.1.03) protocol.
+ROS package for reading continuous data output of the SICK S300 Professional laser scanner via *TCP*. Note that it supports both the old (v.1.02) and the new (v.1.03) protocol.
+
+The S300 is connected with a [Brainboxes ES-511](http://www.brainboxes.com/product/es-511/industrial-ethernet-to-serial-1xrs232-422-485)
 
 Please note that this is an extension of the original "fuerte" driver that was developed by the Autonomous Intelligent Systems Department at Bonn University.
 

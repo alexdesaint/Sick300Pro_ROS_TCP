@@ -1,7 +1,9 @@
 sicks300
 ========
 
-ROS package for reading continuous data output of the SICK S300 Professional laser scanner via RS-422. Note that it supports both the old (v.1.02) and the new (v.1.03) protocol.
+This is a fork of [Sicks300](https://github.com/bohlender/sicks300)
+
+ROS package for reading continuous data output of the SICK S300 Professional laser scanner via _TCP_. Note that it supports both the old (v.1.02) and the new (v.1.03) protocol.
 
 Please note that this is an extension of the original "fuerte" driver that was developed by the Autonomous Intelligent Systems Department at Bonn University.
 
@@ -53,10 +55,5 @@ Parameters
 
     The field of view to publish. The maximum view angle is 270 degrees, setting this to a value lower than 270 will remove the left and right sides of the field of view. 
 
-* `~devicename (String, default: "/dev/sick300")`
-
-    Port connected to laser. 
-
-* `~baudrate (int, default: 500000)`
-
-    Sets the baud rate
+* `~adresse (string, default: ??)`
+    TCP adresse

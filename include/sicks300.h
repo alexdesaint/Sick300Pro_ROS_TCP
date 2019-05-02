@@ -44,7 +44,7 @@
 #ifndef __SICKS300_H__
 #define __SICKS300_H__
 
-#include "serialcomm_s300.h"
+#include "TCPClient.h"
 
 #include <string>
 
@@ -74,7 +74,7 @@ public:
 protected:
 
   //! The underlying communications to the laser
-  SerialCommS300 serial_comm_;
+  TCPClient tcp;
 
   sensor_msgs::LaserScan scan_data_;
   ros::Publisher scan_data_publisher_;
@@ -94,9 +94,9 @@ protected:
   //! Send Transform or not
   bool send_transform_;
 
-  std::string device_name_;
-  unsigned int baud_rate_;
-  int connected_;
+  std::string ip;
+  unsigned int port;
+  bool connected = false;
   std::string frame_id_;
 };
 

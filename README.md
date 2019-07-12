@@ -33,35 +33,39 @@ Published Topics
 Parameters
 ----------
 
-* `~frame (String, default: "base_laser_link")`
+* `_frame (String, default: "base_laser_link")`
 
     Laser frame 
 
-* `~send_transform (int, default: 1)`
+* `_send_transform (int, default: 1)`
 
     Send Transform from base_link to base_laser_link. 
 
-* `~tf_x (double, default: 0.115)`
+* `_tf_x (double, default: 0.115)`
 
     Transformation along x-axis 
 
-* `~tf_y (double, default: 0.0)`
+* `_tf_y (double, default: 0.0)`
 
     Transformation along y-axis 
 
-* `~tf_z (double, default: 0.21)`
+* `_tf_z (double, default: 0.21)`
 
     Transformation along z-axis 
 
-* `~field_of_view (int, default: 270)`
+* `_field_of_view (int, default: 270)`
 
     The field of view to publish. The maximum view angle is 270 degrees, setting this to a value lower than 270 will remove the left and right sides of the field of view. 
 
-* `~ip (string, default: 192.168.127.254)`
+* `_topic_name (string, default: "/laserscan")`
+
+    The name of the topic
+
+* `_ip (string, default: 192.168.127.254)`
 
     Adrese of the target
     
-* `~port (int, defaut: 9001)`
+* `_port (int, defaut: 9001)`
 
     Port of the target
 

@@ -95,7 +95,7 @@ protected:
   bool send_transform_;
 
   std::string ip;
-  unsigned int port;
+  int port;
   bool connected = false;
   std::string frame_id_;
 };
